@@ -77,6 +77,32 @@
                                 </strong>
                             </div>
 
+                            <div>
+                                <field name="description" />
+                            </div>
+
+                            <div>
+                                <i class="fa fa-calendar" />
+                                <field name="deadline" />
+                            </div>
+
+                            <div>
+                                <i class="fa fa-flag" />
+                                <field name="priority" />
+                            </div>
+
+                        </div>
+
+                        <div class="oe_kanban_footer d-flex justify-content-between align-items-center">
+                            <span>
+                                <i class="fa fa-user" />
+                                <field name="user-id" />
+                            </span>
+                            <t t-if="record.priority and record.priority.raw_value">
+                                <span class="badge badge-primary">
+                                    
+                                </span>
+                            </t>
                         </div>
                     </t>
                 </templates>
@@ -88,7 +114,7 @@
     <record id='view_user_task' model='ir.actions.act_window'>
         <field name='name'>Mis Tareas</field>
         <field name='res_model'>user.task</field>
-        <field name='view_mode'>list,form</field>
+        <field name='view_mode'>kanban,list,form</field>
         <field name='help' type='html'>
             <p>Desde aquí puedes gestionar tus tareas personales</p>
         </field>
