@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-### Archivo ir.model.access.csv: define permisos de acceso a modelos
-=======
+
 #### Archivo ir.model.access.csv: define permisos de acceso a modelos
->>>>>>> 425986631e6b1abecd2fc4dcb1ab1b5f2d321e26
+
 - Columnas:
 - id                -> identificador único de la regla de acceso
 - name              -> nombre legible de la regla
@@ -21,7 +19,6 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 - Puede leer, escribir, crear y borrar registros
 
 access_user_task_user,user.task usuario,model_user_task,base.group_user,1,1,1,1
-<<<<<<< HEAD
 
-=======
->>>>>>> 425986631e6b1abecd2fc4dcb1ab1b5f2d321e26
+
+
