@@ -94,8 +94,18 @@
         </field>
     </record>
 
-    <!-- Menú -->
-    <menuitem id="menu_user_task_root" name="Gestor de tareas" sequence="10" />
-    <menuitem id="menu_user_task" name="Mis Tareas" parent="menu_user_task_root" action="view_user_task" sequence="20"/>
+    <!-- Menu -->
+    <menuitem 
+        id="menu_user_task_root"
+        name="Gestor de tareas"
+        sequence="10"
+    />
 
+    <menuitem 
+        id="menu_user_task"
+        name="Mis tareas"
+        parent="menu_user_task_root"
+        action="view_user_task"
+        sequence="20"
+    />
 </odoo>
