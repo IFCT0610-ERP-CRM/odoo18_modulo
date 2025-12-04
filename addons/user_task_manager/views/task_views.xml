@@ -36,7 +36,6 @@
         </field>
     </record>
 
-<<<<<<< HEAD
     <!-- Vista tipo kanban-->
     <record id="view_user_task_kanban" model="ir.ui.view">
         <field name="name">user.task.kanban</field>
@@ -111,16 +110,6 @@
         <field name="res_model">user.task</field>
         <field name="view_mode">kanban,list,form</field>
         <field name="help" type="html">
-=======
-    
-
-    <!-- Action -->
-    <record id='view_user_task' model='ir.actions.act_window'>
-        <field name='name'>Mis Tareas</field>
-        <field name='res_model'>user.task</field>
-        <field name='view_mode'>list,form</field>
-        <field name='help' type='html'>
->>>>>>> 3647e3bd521eab1abe163cd2a46a89216645db8f
             <p>Desde aquí puedes gestionar tus tareas personales</p>
         </field>
     </record>
