@@ -1,41 +1,42 @@
 <odoo>
-    <!-- Vista tipo formulario -->
-    <record id="view_user_task_form" model="ir.ui.view">
-        <field name="name">user.task.form</field>
-        <field name="model">user.task</field>
-        <field name="arch" type="xml">
-            <form string="User Task">
+    <!-- Vista tipo formulario-->
+    <record id='view_user_task_form' model='ir.ui.view'>
+        <field name='name'>user.task.form</field>
+        <field name='model'>user.task</field>
+        <field name='arch' type='xml'>
+            <form string='User Task'>
                 <sheet>
                     <group>
-                        <field name="name" />
-                        <field name="description" />
-                        <field name="priority" />
-                        <field name="state" />
-                        <field name="deadline" />
-                        <field name="user_id" readonly="1" />
-                        <field name="is_done" readonly="1" />
+                        <field name='name'/>
+                        <field name='description'/>
+                        <field name='priority'/>
+                        <field name='state'/>
+                        <field name='deadline'/>
+                        <field name='user_id' readonly='1'/>
+                        <field name='is_done' readonly='1'/>
                     </group>
                 </sheet>
-            
             </form>
         </field>
     </record>
 
-    <!-- Vista tipo lista -->
-    <record id="view_user_task_list" model="ir.ui.view">
-        <field name="name">user.task.list</field>
-        <field name="model">user.task</field>
-        <field name="arch" type="xml">
-            <list string="Tareas">
-                <field name="name" />
-                <field name="priority" />
-                <field name="state" />
-                <field name="deadline" />
-                <field name="is_done" />
+
+    <!-- Vista tipo lista-->
+    <record id='view_user_task_list' model='ir.ui.view'>
+        <field name='name'>user.task.list</field>
+        <field name='model'>user.task</field>
+        <field name='arch' type='xml'>
+            <list string='Tareas'>
+                <field name='name'/>
+                <field name='priority'/>
+                <field name='state'/>
+                <field name='deadline'/>
+                <field name='is_done' readonly='1'/>
             </list>
         </field>
     </record>
 
+<<<<<<< HEAD
     <!-- Vista tipo kanban-->
     <record id="view_user_task_kanban" model="ir.ui.view">
         <field name="name">user.task.kanban</field>
@@ -110,6 +111,16 @@
         <field name="res_model">user.task</field>
         <field name="view_mode">kanban,list,form</field>
         <field name="help" type="html">
+=======
+    
+
+    <!-- Action -->
+    <record id='view_user_task' model='ir.actions.act_window'>
+        <field name='name'>Mis Tareas</field>
+        <field name='res_model'>user.task</field>
+        <field name='view_mode'>list,form</field>
+        <field name='help' type='html'>
+>>>>>>> 3647e3bd521eab1abe163cd2a46a89216645db8f
             <p>Desde aquí puedes gestionar tus tareas personales</p>
         </field>
     </record>
