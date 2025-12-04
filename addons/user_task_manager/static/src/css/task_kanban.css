@@ -8,3 +8,16 @@
     border-left: 6px solid #6c757d;
     transition: all 0.3s ease;
 }
+
+/* Colores por prioridad */
+.priority_0 {
+    border-left-color: #adb5bd;  /* baja */
+}
+
+.priority_1 {
+    border-left-color: #ffc107;  /* media */
+}
+
+.priority_2 {
+    border-left-color: #dc3545;  /* alta */
+}

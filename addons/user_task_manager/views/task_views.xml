@@ -41,7 +41,7 @@
         <field name="name">user.task.kanban</field>
         <field name="model">user.task</field>
         <field name="arch" type="xml">
-            <kanban default_group_by="state" class="">
+            <kanban default_group_by="state" class="o_kanban_small_column">
                 <field name="name" />
                 <field name="description" />
                 <field name="priority" />
@@ -53,11 +53,15 @@
                 <template>
                     <t t-name="kanban-box">
                         <t t-if="record.priority and record.priority.raw_value">
-                            <t t-call="user_task_manager.kanban_content" />
+                            <div t-att-class="'oe_kanban_card user_task_kanban oe_kanban_global_click priority_' + record.priority.raw_value">
+                                <t t-call="user_task_manager.kanban_content" />
+                            </div>
                         </t>
 
                         <t t-if="!(record.priority and record.priority.raw_value)">
-                            <t t-call="user_task_manager.kanban_content" />
+                            <div t-att-class="'oe_kanban_card user_task_kanban oe_kanban_global_click priority_0'">
+                                <t t-call="user_task_manager.kanban_content" />
+                            </div>
                         </t>
                     </t>
 
